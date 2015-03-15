@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal">
+    <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/map"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="8"
+        android:numColumns="20"
+        android:verticalSpacing="1dp"
+        android:horizontalSpacing="1dp"
+        android:stretchMode="columnWidth"
+        android:paddingLeft="4dp"
+        android:paddingTop="5dp"
+        android:background="#CCCCCC" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:background="#CCCCCC">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Explore"
+            android:id="@+id/explore"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Run"
+            android:id="@+id/run" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="More"
+            android:id="@+id/more"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+</LinearLayout>
+    <!--android:columnWidth="90dp"-->
+    <!--android:stretchMode="columnWidth"-->
+    <!--android:listSelector="@android:color/transparent"-->
+    <!--android:layout_weight=".80"-->
